@@ -1,5 +1,5 @@
 # CPF Generator
-> Gerador de CPF (Válido) via linha de comando.
+> Gerador de CPF (Válido) via linha de comando
 
 ![GitHub top language](https://img.shields.io/github/languages/top/douglasdamasio/cpfGenerator)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/douglasdamasio/cpfGenerator)
