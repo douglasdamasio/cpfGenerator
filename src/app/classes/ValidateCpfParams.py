@@ -30,14 +30,14 @@ class ValidateCpfParams:
     def validateType(self):
         if self.validateParams() is True:
             if self._lt[-1] == '-f' or self._lt[-1] == '--format':
-                return self._lt, True
+                return True
             else:
                 print(
                     'Parametro de formatação opcional deve ser -f ou --format'
                 )
                 exit()
         else:
-            return self._lt, False
+            return False
 
     def validadeFull(self):
         self.validateSize()

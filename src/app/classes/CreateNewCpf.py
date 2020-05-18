@@ -4,36 +4,50 @@ from random import randrange
 
 class CreateNewCpf:
     def __init__(self, listOfParams):
-        self._params, self._type = ValidateCpfParams(listOfParams).\
-            validadeFull()
-        self.createCpf(self._params, self._type)
+        self._type = ValidateCpfParams(listOfParams).validadeFull()
+        self._cpf = self.createCpf()
+        self.format(self._cpf, self._type)
 
-    def createCpf(self, listOfParams, typeFormat):
-        if typeFormat is True:
-            cpfFormat = []
+    def createCpf(self):
+        cpf = list(map(lambda digit: randrange(0, 9), range(0, 9)))
 
-            for n in range(0, 11):
-                n = randrange(0, 9)
-                cpfFormat.append(str(n))
+        cpf = self.calculateDigit(cpf)
 
-            cpfFormat = ''.join(cpfFormat)
+        cpf = list(map(lambda a: str(a), cpf))
 
-            cpf = f'{cpfFormat[0:3]}.{cpfFormat[3:6]}.{cpfFormat[6:9]}-{cpfFormat[9:]}'
+        return cpf
 
-            msg = 'CPF (Formatado):'
+    def calculateDigit(self, cpf):
+        multiplier = 10 if len(cpf) == 9 else 11
 
+        if len(cpf) <= 10:
+            calc = []
+            for digit in cpf:
+                calc.append(digit * multiplier)
+                multiplier -= 1
+            
+            r = sum(calc) % 11
+
+            cpf.append(0) if r == 1 or r == 0 else cpf.append(11 - r)
+
+            return self.calculateDigit(cpf)
+        else:
+            return cpf
+
+    def format(self, cpf, type):
+        if type is True:
+            cpf = ''.join(cpf)
+            
+            cpf = f'{cpf[0:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}'
+            msg = 'CPF (formatado):'
+            
             self.showCpf(msg, cpf)
 
-        elif typeFormat is False:
-            cpfNotFormat = []
-            for n in range(0, 11):
-                n = randrange(0, 9)
-                cpfNotFormat.append(str(n))
-
-            cpf = ''.join(cpfNotFormat)
+        else:
+            cpf = ''.join(cpf)
 
             msg = 'CPF (Somente números):'
-
+            
             self.showCpf(msg, cpf)
 
     def showCpf(self, msg, cpf):

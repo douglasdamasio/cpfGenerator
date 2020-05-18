@@ -1,5 +1,5 @@
 # CPF Generator
-> Gerador de CPF via linha de comando.
+> Gerador de CPF (Válido) via linha de comando
 
 ![GitHub top language](https://img.shields.io/github/languages/top/douglasdamasio/cpfGenerator)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/douglasdamasio/cpfGenerator)
@@ -7,7 +7,9 @@
 ![Python Version](https://img.shields.io/badge/python-3.8.2-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/douglasdamasio/cpfGenerator)
 
-Este é um gerador rápido de CPF via linha de comando.
+Este é um gerador rápido de CPF (Válido) via linha de comando.
+
+Você pode encontrar a explicação lógica em [Cálculo do dígito verificador do CPF](https://www.somatematica.com.br/faq/cpf.php)
 
 ## Instalação 
 
