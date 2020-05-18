@@ -41,8 +41,7 @@ Utilize o arquivo *`run.py`* dentro da pasta *`src/app`*.
     - Resultado esperado:
 
         *CPF (Formatado): 846.054.555-32*
-<br />
-<br />
+
 
 ## Configuração de Desenvolvimento
 Ainda não há uma configuração de modo de desenvolvimento neste projeto diferente da contribuição através de pull requests.
