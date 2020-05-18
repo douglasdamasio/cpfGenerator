@@ -11,10 +11,10 @@ Este é um gerador rápido de CPF via linha de comando.
 
 ## Instalação 
 
-Clone o repositorio ou baixe o pacote de arquivos em formato *`.zip`*.
+Clone o repositorio ou baixe o pacote de arquivos em formato *`.zip`*
 
 ## Execução
-Utilize o arquivo *`run.py`* dentro da pasta *`src/app`*.
+Utilize o arquivo *`run.py`* dentro da pasta *`src/app`*
 
 ## Exemplo de uso
  - Para gerar um número de CPF **NÃO FORMATADO**:
