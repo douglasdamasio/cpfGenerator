@@ -1,6 +1,3 @@
-# CPF Generator
-> Gerador de CPF (Válido) via linha de comando
-
 <center>
 
 <img src=./src/asset/img/logo.png>
@@ -12,6 +9,9 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/douglasdamasio/cpfGenerator)
 
 </center>
+
+# CPF Generator
+> Gerador de CPF (Válido) via linha de comando
 
 Este é um gerador rápido de CPF (Válido) via linha de comando.
 
