@@ -1,5 +1,5 @@
 # CPF Generator
-> Gerador de CPF (Válido) via linha de comando
+> Gerador de CPF (Válido) via linha de comando 
 
 ![](./src/asset/img/logo.png)
 
